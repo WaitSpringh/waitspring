@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>待春</title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    <script src="jq.min.js"></script>
+
+    <div id="ldb">
+        <div class="lay 0 show0 show" style="margin: 0;">
+            <p style="font-size: 40px;">嗨，别来无恙啊！</p>
+            <p style="font-size: 20px;">欢迎来到待春的个人主页</p>
+        </div>
+        <div class="lay 1" style="margin: 0;">
+            <p style="font-size: 40px;text-align: left;">纤云弄巧，银汉迢迢暗度。</p>
+            <p style="font-size: 30px;">金风玉露一相逢，便胜却人间无数。</p>
+            <p style="text-align: right;margin-top: 5px;">———《鹊桥仙·纤云弄巧》秦观</p>
+        </div>
+        <div class="lay 2" style="margin: 0;">
+            <p style="font-size: 40px;">天接云涛连晓雾，</p>
+            <p style="font-size: 30px;text-align: left;">星河欲转千帆舞。</p>
+            <p style="text-align: right;margin-top: 5px;">———《渔家傲·天接云涛连晓雾》李清照</p>
+        </div>
+        <div class="lay 3" style="margin: 0;">
+            <p style="font-size: 35px;">向晚暮风拂袖顾，婵娟星海耀千古。</p>
+            <p style="font-size: 30px;text-align: cenetr;">亭台既去诗不复，星源处，</p>
+            <p style="font-size: 40px;text-align: right;">银汉皎皎月明孤。</p>
+            <p style="text-align: right;margin-top: 5px;">———《渔家傲·星源》</p>
+        </div>
+        <div class="lay 4" style="margin: 0;">
+            <p style="font-size: 30px;">沧桑再顾，沧海一粟，</p>
+            <p style="font-size: 33px;text-align: right;">竹笛悠悠兮波起伏。</p>
+            <p style="text-align: right;margin-top: 5px;">———《梦幻·星源》</p>
+        </div>
+        <div class="lay 5" style="margin: 0;">
+            <p style="font-size: 33px;">颤颤百载风云无数，枭者英雄义者负。</p>
+            <p style="font-size: 28px;text-align: right;">青砖黛瓦红墙不复，别去亭台楼阁，送走诗歌词赋。</p>
+            <p style="text-align: right;margin-top: 5px;">———《梦幻·星源》</p>
+        </div>
+        <div class="lay 6" style="margin: 0;">
+            <p style="font-size: 35px;">日轮月转一仰俯，河山越尽沧桑书。</p>
+            <p style="font-size: 30px;text-align: cenetr;">千里东风青云负，乾坤舞，</p>
+            <p style="font-size: 40px;text-align: right;">扶摇浩浩寰宇舒。</p>
+            <p style="text-align: right;margin-top: 5px;">———《渔家傲·星源》</p>
+        </div>
+        <div class="lay 7" style="margin: 0;">
+            <p style="font-size: 40px;">九万里风鹏正举，</p>
+            <p style="font-size: 30px;text-align: left;">风休住，蓬舟吹取三山去。</p>
+            <p style="text-align: right;margin-top: 5px;">———《渔家傲·天接云涛连晓雾》李清照</p>
+        </div>
+       
+    </div>
+    <a class="a" id="stt" onclick="
+        $('#ldb').hide();
+        document.body.style.overflow='auto';
+        $(this).remove();"><span style="font-size: 15px;">已加载完成</span><span style="font-size: 30px;">开始</span></a>
+    <script>
+let dl=[-1,10,8,13,9,14,13,18];let nt=4550;
+        setTimeout(() => {
+            $('#ldb>.lay.0').removeClass('show');
+            setTimeout(() => {
+                $('#ldb>.lay.0').removeClass('show0');
+            }, 500);
+        }, nt-530);
+for (let i = 1; i < 8; i++) {
+    nt+=dl[i]*1000;
+    setTimeout(() => {
+        $('#ldb>.lay.'+i).addClass('show0');
+        setTimeout(() => {
+        $('#ldb>.lay.'+i).addClass('show');
+            
+        }, 20);
+        setTimeout(() => {
+            $('#ldb>.lay.'+i).removeClass('show');
+            setTimeout(() => {
+                $('#ldb>.lay.'+i).removeClass('show0');
+            }, 500);
+        }, dl[i]*1000-1000);
+    }, nt-dl[i]*1000);
+}
+    setTimeout(() => {
+        $('#ldb>.lay.l').addClass('show0');
+        setTimeout(() => {
+        $('#ldb>.lay.l').addClass('show');
+            
+        }, 20);
+    }, nt);
+
+document.body.onload=()=>{
+    $('#stt').addClass('show')
+};
+
+    </script>
+         <div class="motto">海纳百川，有容乃大。</div>
+      
+    
+    <div id="inf" class="lay">
+        <div class="card">
+            <div class="tit">
+                <p style="font-size: 38px;">基本信息 </p>
+                <p style="font-size: 27px;"><nobr>(有待考证,仅供参考 >u-)o</nobr></p>
+            </div>
+            <div class="chart body">
+                <div>
+                    <p>名字</p>
+                    <p>待春</p>
+                </div>
+                <div>
+                    <p>国籍</p>
+                    <p>中华人民共和国</p>
+                </div>
+                <div>
+                    <p>民族</p>
+                    <p>汉族</p>
+                </div>
+                <div>
+                    <p>籍贯</p>
+                    <p>安徽，宿州</p>
+                </div>
+                <div>
+                    <p>现居</p>
+                    <p>江苏，盐城</p>
+                </div>
+                <div>
+                    <p>生日</p>
+                    <p>2010年11月中旬</p>
+                </div>
+                <div> 
+                    <!-- Sex -->
+                    <p>生理性别</p>
+                    <p>男</p>
+                </div>
+                <div>
+                    <!-- Gender -->
+                    <p>社会性别</p>
+                    <p>武装直升机</p>
+                </div>
+                <div>
+                    <p>性倾向</p>
+                    <p>异性</p>
+                </div>
+                <hr>
+              
+                <div>
+                    <p>政治面貌</p>
+                    <p>群众</p>
+                </div>
+                <div>
+                    <p>学历</p>
+                    <p>初中</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div id="grt" class="lay">
+        <div style="width: max-content;text-shadow: #020000 0 0 20px;">
+        <p style="font-size: 60px;">幸会！👋</p>
+        <p style="font-size: 35px;">欢迎来到待春的个人主页</p>
+        <p style="font-size: 17px;color: #ccc;">本网页所有信息仅供参考，不保证其真实性、正确性</p></div>
+    </div>
+    <div id="exp" class="lay">
+        <p style="font-size: 50px;text-align: center;margin-bottom: 100px;">人生主要履历与成就</p>
+        <div class="card">
+            <div class="body">
+                <p style="margin: 20px 20px 10px 30px;">2010年生于安徽宿州</p>
+                <p style="margin: 0 20px 10px 30px;">2017年就读江苏省盐城市亭湖新区实验小学</p>
+                <p style="margin: 0 20px 10px 30px;">2023年就读江苏省盐城市亭湖新区初级中学</p>
+                <p style="margin: 0 20px 10px 35px;">······</p>
+                <hr>
+                <p style="margin: 0 20px 10px 30px;">.NET基金会会员</p>
+                <p style="margin: 0 20px 10px 30px;">维基百科执行编辑</p>
+                <p style="margin: 0 20px 10px 35px;">······</p>
+            </div>
+        </div>
+    </div>
+    <div class="lay">
+        <div class="card">
+            <p style="font-size: 40px;" class="tit center"><span class="shine" style="--color:#3a8fe9;--colorshine:#8feaff;--speed:4;">会使用各种语言</span></p>
+            <div class="body" id="jt">
+            
+                <div><p style="margin: 0;">Markdown</p>
+                    <div><div style="background: #bebebe;width: 85%;height: 100%;border-radius: 10px;"
+                        class="highlight width"></div></div></div>
+                <div><p style="margin: 0;">CSS</p>
+                    <div><div style="background: #4061e8;width: 77%;height: 100%;border-radius: 10px;"
+                        class="highlight width"></div></div></div>
+                <div><p style="margin: 0;">Html</p>
+                    <div><div style="background: #d66022;width: 68%;height: 100%;border-radius: 10px;"
+                        class="highlight width"></div></div></div>
+                <div><p style="margin: 0;">Javascript</p>
+                    <div><div style="background: #e9c900;width: 46%;height: 100%;border-radius: 10px;"
+                        class="highlight width"></div></div></div>
+                <div><p style="margin: 0;">Python</p>
+                    <div><div style="background: #4db8a6;width: 43%;height: 100%;border-radius: 10px;"
+                        class="highlight width"></div></div></div>
+                <div><p style="margin: 0;">C++</p>
+                    <div><div style="background: #6c94c9;width: 35%;height: 100%;border-radius: 10px;"
+                        class="highlight width"></div></div></div>
+                <div><p style="margin: 0;">Cmd</p>
+                    <div><div style="background: #aaaaaa;width: 30%;height: 100%;border-radius: 10px;"
+                        class="highlight width"></div></div></div>
+                
+              
+                <div><p style="margin: 0;">Powershell</p>
+                    <div><div style="background: #3e6dbf;width: 5%;height: 100%;border-radius: 10px;"
+                        class="highlight width"></div></div></div>
+            </div>
+        </div>
+    </div>
+    <div class="lay">
+        <p style="font-size: 50px;text-align: center;margin-bottom: 100px;">兴趣爱好</p>
+        <div id="hab">
+            <div class="cd">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+                    <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/>
+                  </svg>
+                <span>编程</span>
+            </div>
+            <div class="cd">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-vector-pen" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M10.646.646a.5.5 0 0 1 .708 0l4 4a.5.5 0 0 1 0 .708l-1.902 1.902-.829 3.313a1.5 1.5 0 0 1-1.024 1.073L1.254 14.746 4.358 4.4A1.5 1.5 0 0 1 5.43 3.377l3.313-.828L10.646.646zm-1.8 2.908-3.173.793a.5.5 0 0 0-.358.342l-2.57 8.565 8.567-2.57a.5.5 0 0 0 .34-.357l.794-3.174-3.6-3.6z"/>
+                    <path fill-rule="evenodd" d="M2.832 13.228 8 9a1 1 0 1 0-1-1l-4.228 5.168-.026.086.086-.026z"/>
+                  </svg>
+                <span>写百科</span>
+            </div>
+            <div class="cd">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+                    <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                  </svg>
+                <span>阅览</span>
+            </div>
+            
+            
+        </div>
+    </div>
+    <div class="lay">
+        <div style="width: max-content;text-shadow: #000 0 0 20px;">
+        <p style="font-size: 50px;">我的项目</p>
+        <p style="font-size: 18px;">一些我主要做的项目，技拙见笑 >u-)o</p>
+    </div></div>
+   
+        <div class="lay">
+            <div class="card prj">
+                <p class="tit">壮猿的手机</p>
+                <div class="body">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-code-slash" viewBox="0 0 16 16">
+                      <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/>
+                    </svg>css, js</span>
+                    <p>内置语音助手，使用html，css，js开发
+                        
+                    </p>
+                    <div class="ops">
+                    
+                    <a href="https://github.com/waitspringh/ZYDMP" class="a" style="width: 100%;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                      </svg>在 Github 查看</a></div>
+                </div>
+            </div>
+        </div>
+    <div class="lay">
+        <div class="card prj">
+            <p class="tit" style="">守望先锋亚服交流群裁决委员会网站</p>
+            <div class="body">
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-code-slash" viewBox="0 0 16 16">
+                  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/>
+                </svg>css, js</span>
+                <p>方便大家了解守望先锋亚服交流群各种动向
+                   </p>
+                    <div class="ops">
+                        <a href="https://waitspringh.github.io/gitweb" class="a"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-up-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M6.364 13.5a.5.5 0 0 0 .5.5H13.5a1.5 1.5 0 0 0 1.5-1.5v-10A1.5 1.5 0 0 0 13.5 1h-10A1.5 1.5 0 0 0 2 2.5v6.636a.5.5 0 1 0 1 0V2.5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5H6.864a.5.5 0 0 0-.5.5z"/>
+                            <path fill-rule="evenodd" d="M11 5.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793l-8.147 8.146a.5.5 0 0 0 .708.708L10 6.707V10.5a.5.5 0 0 0 1 0v-5z"/>
+                          </svg>立即预览
+                        </a>
+                <a href="https://github.com/waitspringh/gitweb" class="a"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                  </svg>在Github查看
+                </a></div>
+            </div>
+        </div>
+    </div>
+   
+    <div class="lay" id="ft" style="user-select: none;">
+        <div style="display: flex;flex-direction: column;flex-grow: 1;align-items: center;justify-content: center;">
+            <img src="f5e3c93bca692d5142320b2f4c10b3e815806688.jpg" alt="2024年8月的背景" class="circle-image">
+            <p style="margin-top: 10px;color: #aaa;">2024年8月
+            </p>
+            <div style="margin-top: 20px;">
+                
+                <p class="text-center">待春</p>
+                <p class="text-center">WaitSpring</p>
+            <p>背景来自 <a href="https://wallhaven.cc/" class="a jump">wallhaven</a></p>
+        </div></div>
+        <p style="font-size: 18px;color: #555;margin-bottom: 5px;">细雨斜风作晓寒，
+
+            <br>淡烟疏柳媚晴滩。
+
+        </p>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
